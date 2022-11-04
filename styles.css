@@ -1,0 +1,143 @@
+:root{
+    --backbackcolor:rgba(255, 221, 212, 0.8);
+    --textbackcolor:rgba(212, 255, 227, 0.6);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--backbackcolor);
+    font-family: verdana, sans-serif;
+}
+
+#menu-bar div{
+    height:20vh;
+    width:auto;
+    margin-bottom:10px;
+}
+
+#menu-bar img{
+    object-fit: contain;
+    height:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .2s ease;
+}
+
+#menu-bar img:hover{
+    transform: rotateY(180deg);
+}
+
+#writing{
+    background-color: var(--textbackcolor);
+    width:50vw;
+    margin:auto;
+    border-radius: 2%;
+}
+
+a:link{text-decoration: none; color:black;}
+a:visited { text-decoration: none; color:black;}
+a:hover { text-decoration: none; color:black;}
+a:focus { text-decoration: none; color:black;}
+a:active { text-decoration: none; color:black}
+
+#intro-to-book {
+    margin:auto;
+    width:50%;
+    height:70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#star-rating {
+    margin-top:-30px;
+}
+
+.checked{
+    color:orange;
+    align-self: auto;
+}
+
+#intro-to-book img {
+    max-width:20vw;
+    max-height:100%;
+    object-fit: cover;
+}
+
+#intro-to-book > #book-title{
+    font-size:30px;
+    display:inline-block;
+    width:120%;
+    text-align: center;
+    margin-top:-0.5rem;
+}
+
+#intro-to-book > #authors{
+    margin-top:-50px;
+}
+
+#intro-to-book a{
+    transition: all 0.2s ease-in-out;
+    display:block;
+}
+  
+#intro-to-book a:hover {
+    font-weight:bold;
+    transform: scale(1.5);
+}
+
+.rounded{
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  width: 80%;
+  margin:auto;
+}
+
+#summary {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:70%;
+    margin:auto;
+}
+
+#summary > #one-line-summary {
+    display:inline-block;
+    text-align: center;
+    font-size:1.5rem;
+    font-weight:bolder;
+}
+
+#full-summary > p{ 
+    text-indent: 1rem;
+    line-height: 1.5rem;
+    margin: 2rem 0 2rem 0;
+}
+
+#full-summary > p:nth-child(7){
+    margin-bottom:3rem;
+}
+
+#summary > #quotes {
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+#summary > ul {
+    margin:0 auto 0 auto;
+    display:inline-block;
+    line-height:1.7rem;
+}
+
+#summary > #reviewed-by {
+    align-self: flex-end;
+    display:inline-block;
+    line-height:0.5rem;
+    padding-right:3rem;
+}
