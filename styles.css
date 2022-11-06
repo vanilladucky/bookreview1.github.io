@@ -141,3 +141,31 @@ a:active { text-decoration: none; color:black}
     line-height:0.5rem;
     padding-right:3rem;
 }
+
+#comment-section{
+    margin:auto;
+    margin-top:5vh;
+    padding:auto;
+    width:100%;
+    height:20vh;
+}
+
+textarea{
+    width:99%;
+    height:50px;
+}
+
+textarea::placeholder{
+    font-size:150%;
+}
+
+#comment-section input {
+    padding:auto;
+    margin:auto;
+    float:right;
+    margin-top:0.5rem;
+    width:10%;
+    height:20%;
+}
+
+
